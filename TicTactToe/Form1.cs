@@ -14,7 +14,6 @@ namespace TicTactToe
 {
     public partial class Form1 : Form
     {
-        public string ai = "";
         public string player = "";
         public Form1()
         {
@@ -35,6 +34,8 @@ namespace TicTactToe
 
         private void aiPlayer(string player)
         {
+            public string ai = "";
+
             Random random = new Random();
 
             int grid = random.Next(1, 10);
