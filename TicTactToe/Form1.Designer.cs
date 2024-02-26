@@ -59,6 +59,7 @@
             this.btnGrid2.Size = new System.Drawing.Size(100, 100);
             this.btnGrid2.TabIndex = 1;
             this.btnGrid2.UseVisualStyleBackColor = true;
+            this.btnGrid2.Click += new System.EventHandler(this.btnGrid2_Click);
             // 
             // btnGrid3
             // 
@@ -69,6 +70,7 @@
             this.btnGrid3.Size = new System.Drawing.Size(100, 100);
             this.btnGrid3.TabIndex = 2;
             this.btnGrid3.UseVisualStyleBackColor = true;
+            this.btnGrid3.Click += new System.EventHandler(this.btnGrid3_Click);
             // 
             // btnGrid6
             // 
@@ -79,6 +81,7 @@
             this.btnGrid6.Size = new System.Drawing.Size(100, 100);
             this.btnGrid6.TabIndex = 5;
             this.btnGrid6.UseVisualStyleBackColor = true;
+            this.btnGrid6.Click += new System.EventHandler(this.btnGrid6_Click);
             // 
             // btnGrid5
             // 
@@ -89,6 +92,7 @@
             this.btnGrid5.Size = new System.Drawing.Size(100, 100);
             this.btnGrid5.TabIndex = 4;
             this.btnGrid5.UseVisualStyleBackColor = true;
+            this.btnGrid5.Click += new System.EventHandler(this.btnGrid5_Click);
             // 
             // btnGrid4
             // 
@@ -99,6 +103,7 @@
             this.btnGrid4.Size = new System.Drawing.Size(100, 100);
             this.btnGrid4.TabIndex = 3;
             this.btnGrid4.UseVisualStyleBackColor = true;
+            this.btnGrid4.Click += new System.EventHandler(this.btnGrid4_Click);
             // 
             // btnGrid9
             // 
@@ -109,6 +114,7 @@
             this.btnGrid9.Size = new System.Drawing.Size(100, 100);
             this.btnGrid9.TabIndex = 8;
             this.btnGrid9.UseVisualStyleBackColor = true;
+            this.btnGrid9.Click += new System.EventHandler(this.btnGrid9_Click);
             // 
             // btnGrid8
             // 
@@ -119,6 +125,7 @@
             this.btnGrid8.Size = new System.Drawing.Size(100, 100);
             this.btnGrid8.TabIndex = 7;
             this.btnGrid8.UseVisualStyleBackColor = true;
+            this.btnGrid8.Click += new System.EventHandler(this.btnGrid8_Click);
             // 
             // btnGrid7
             // 
@@ -129,13 +136,14 @@
             this.btnGrid7.Size = new System.Drawing.Size(100, 100);
             this.btnGrid7.TabIndex = 6;
             this.btnGrid7.UseVisualStyleBackColor = true;
+            this.btnGrid7.Click += new System.EventHandler(this.btnGrid7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(300, 299);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(584, 299);
             this.Controls.Add(this.btnGrid9);
             this.Controls.Add(this.btnGrid8);
             this.Controls.Add(this.btnGrid7);
@@ -145,8 +153,8 @@
             this.Controls.Add(this.btnGrid3);
             this.Controls.Add(this.btnGrid2);
             this.Controls.Add(this.btnGrid1);
-            this.MaximumSize = new System.Drawing.Size(316, 338);
-            this.MinimumSize = new System.Drawing.Size(316, 338);
+            this.MaximumSize = new System.Drawing.Size(600, 338);
+            this.MinimumSize = new System.Drawing.Size(600, 338);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
