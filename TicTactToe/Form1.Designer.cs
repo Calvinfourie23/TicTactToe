@@ -37,6 +37,7 @@
             this.btnGrid9 = new System.Windows.Forms.Button();
             this.btnGrid8 = new System.Windows.Forms.Button();
             this.btnGrid7 = new System.Windows.Forms.Button();
+            this.lblTemp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGrid1
@@ -138,12 +139,22 @@
             this.btnGrid7.UseVisualStyleBackColor = true;
             this.btnGrid7.Click += new System.EventHandler(this.btnGrid7_Click);
             // 
+            // lblTemp
+            // 
+            this.lblTemp.AutoSize = true;
+            this.lblTemp.Location = new System.Drawing.Point(378, 100);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(58, 13);
+            this.lblTemp.TabIndex = 9;
+            this.lblTemp.Text = "Temp Text";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(584, 299);
+            this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.btnGrid9);
             this.Controls.Add(this.btnGrid8);
             this.Controls.Add(this.btnGrid7);
@@ -158,6 +169,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -172,6 +184,7 @@
         private System.Windows.Forms.Button btnGrid9;
         private System.Windows.Forms.Button btnGrid8;
         private System.Windows.Forms.Button btnGrid7;
+        private System.Windows.Forms.Label lblTemp;
     }
 }
 
