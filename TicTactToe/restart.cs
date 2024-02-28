@@ -27,5 +27,17 @@ namespace TicTactToe
         {
             Application.Exit();
         }
+
+        public string WinnerText
+        {
+            get
+            {
+                return this.lblWL.Text;
+            }
+            set
+            {
+                lblWL.Text = $"The winner is {value}!";
+            }
+        }
     }
 }

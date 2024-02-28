@@ -19,9 +19,10 @@ namespace TicTactToe
         public Form1()
         {
             InitializeComponent();
+            DisableGame();
         }
 
-        private void EndState(string player)
+        private void WinCheck(string player)
         {
             string winner = "";
 
@@ -63,9 +64,12 @@ namespace TicTactToe
                 winner = this.btnGrid3.Text;
             }
 
-            Restart restart = new Restart();
-            restart.Show();
-            
+            if (winner != "")
+            {
+                Restart restart = new Restart();
+                restart.WinnerText = winner;
+                restart.Show();
+            }
         }
 
         private void aiPlay(string player)
@@ -82,7 +86,7 @@ namespace TicTactToe
             {
                 if(count == 5)
                 {
-                    EndState(player);
+                    WinCheck(player);
                     return;
                 }
 
@@ -171,64 +175,75 @@ namespace TicTactToe
         {
             btnGrid1.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid2_Click(object sender, EventArgs e)
         {
             btnGrid2.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid3_Click(object sender, EventArgs e)
         {
             btnGrid3.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid4_Click(object sender, EventArgs e)
         {
             btnGrid4.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid5_Click(object sender, EventArgs e)
         {
             btnGrid5.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid6_Click(object sender, EventArgs e)
         {
             btnGrid6.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid7_Click(object sender, EventArgs e)
         {
             btnGrid7.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid8_Click(object sender, EventArgs e)
         {
             btnGrid8.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnGrid9_Click(object sender, EventArgs e)
         {
             btnGrid9.Text = player;
             aiPlay(player);
+            WinCheck(player);
         }
 
         private void btnXChoice_Click(object sender, EventArgs e)
         {
             player = "X";
+            EnableGame();
         }
 
         private void btnOChoice_Click(object sender, EventArgs e)
         {
             player = "O";
+            EnableGame();
         }
 
         public void DisableGame()
