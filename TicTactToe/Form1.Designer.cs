@@ -97,8 +97,9 @@
             // 
             // btnGrid6
             // 
+            this.btnGrid6.BackColor = System.Drawing.Color.White;
             this.btnGrid6.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid6.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid6.Location = new System.Drawing.Point(200, 203);
             this.btnGrid6.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid6.MinimumSize = new System.Drawing.Size(50, 50);
@@ -106,13 +107,14 @@
             this.btnGrid6.Size = new System.Drawing.Size(100, 87);
             this.btnGrid6.TabIndex = 5;
             this.btnGrid6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid6.UseVisualStyleBackColor = true;
+            this.btnGrid6.UseVisualStyleBackColor = false;
             this.btnGrid6.Click += new System.EventHandler(this.btnGrid6_Click);
             // 
             // btnGrid5
             // 
+            this.btnGrid5.BackColor = System.Drawing.Color.White;
             this.btnGrid5.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid5.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid5.Location = new System.Drawing.Point(106, 203);
             this.btnGrid5.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid5.MinimumSize = new System.Drawing.Size(50, 50);
@@ -120,13 +122,14 @@
             this.btnGrid5.Size = new System.Drawing.Size(88, 87);
             this.btnGrid5.TabIndex = 4;
             this.btnGrid5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid5.UseVisualStyleBackColor = true;
+            this.btnGrid5.UseVisualStyleBackColor = false;
             this.btnGrid5.Click += new System.EventHandler(this.btnGrid5_Click);
             // 
             // btnGrid4
             // 
+            this.btnGrid4.BackColor = System.Drawing.Color.White;
             this.btnGrid4.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid4.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid4.Location = new System.Drawing.Point(0, 203);
             this.btnGrid4.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid4.MinimumSize = new System.Drawing.Size(50, 50);
@@ -134,13 +137,14 @@
             this.btnGrid4.Size = new System.Drawing.Size(100, 87);
             this.btnGrid4.TabIndex = 3;
             this.btnGrid4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid4.UseVisualStyleBackColor = true;
+            this.btnGrid4.UseVisualStyleBackColor = false;
             this.btnGrid4.Click += new System.EventHandler(this.btnGrid4_Click);
             // 
             // btnGrid9
             // 
+            this.btnGrid9.BackColor = System.Drawing.Color.White;
             this.btnGrid9.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid9.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid9.Location = new System.Drawing.Point(200, 296);
             this.btnGrid9.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid9.MinimumSize = new System.Drawing.Size(50, 50);
@@ -148,13 +152,14 @@
             this.btnGrid9.Size = new System.Drawing.Size(100, 100);
             this.btnGrid9.TabIndex = 8;
             this.btnGrid9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid9.UseVisualStyleBackColor = true;
+            this.btnGrid9.UseVisualStyleBackColor = false;
             this.btnGrid9.Click += new System.EventHandler(this.btnGrid9_Click);
             // 
             // btnGrid8
             // 
+            this.btnGrid8.BackColor = System.Drawing.Color.White;
             this.btnGrid8.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid8.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid8.Location = new System.Drawing.Point(106, 296);
             this.btnGrid8.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid8.MinimumSize = new System.Drawing.Size(50, 50);
@@ -162,13 +167,14 @@
             this.btnGrid8.Size = new System.Drawing.Size(88, 100);
             this.btnGrid8.TabIndex = 7;
             this.btnGrid8.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid8.UseVisualStyleBackColor = true;
+            this.btnGrid8.UseVisualStyleBackColor = false;
             this.btnGrid8.Click += new System.EventHandler(this.btnGrid8_Click);
             // 
             // btnGrid7
             // 
+            this.btnGrid7.BackColor = System.Drawing.Color.White;
             this.btnGrid7.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid7.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid7.Location = new System.Drawing.Point(0, 296);
             this.btnGrid7.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid7.MinimumSize = new System.Drawing.Size(50, 50);
@@ -176,7 +182,7 @@
             this.btnGrid7.Size = new System.Drawing.Size(100, 100);
             this.btnGrid7.TabIndex = 6;
             this.btnGrid7.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid7.UseVisualStyleBackColor = true;
+            this.btnGrid7.UseVisualStyleBackColor = false;
             this.btnGrid7.Click += new System.EventHandler(this.btnGrid7_Click);
             // 
             // btnOChoice
@@ -221,20 +227,22 @@
             // 
             // pnlRestart
             // 
-            this.pnlRestart.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlRestart.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlRestart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlRestart.Controls.Add(this.lblWL);
             this.pnlRestart.Controls.Add(this.btnExitRestart);
             this.pnlRestart.Controls.Add(this.btnYesRestart);
             this.pnlRestart.Controls.Add(this.restartLbl);
-            this.pnlRestart.Location = new System.Drawing.Point(0, 187);
+            this.pnlRestart.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.pnlRestart.Location = new System.Drawing.Point(0, 139);
             this.pnlRestart.Name = "pnlRestart";
-            this.pnlRestart.Size = new System.Drawing.Size(300, 118);
+            this.pnlRestart.Size = new System.Drawing.Size(300, 198);
             this.pnlRestart.TabIndex = 13;
             // 
             // lblWL
             // 
             this.lblWL.AutoSize = true;
-            this.lblWL.Location = new System.Drawing.Point(74, 13);
+            this.lblWL.Location = new System.Drawing.Point(74, 49);
             this.lblWL.Name = "lblWL";
             this.lblWL.Size = new System.Drawing.Size(58, 13);
             this.lblWL.TabIndex = 11;
@@ -242,7 +250,7 @@
             // 
             // btnExitRestart
             // 
-            this.btnExitRestart.Location = new System.Drawing.Point(151, 67);
+            this.btnExitRestart.Location = new System.Drawing.Point(151, 103);
             this.btnExitRestart.Name = "btnExitRestart";
             this.btnExitRestart.Size = new System.Drawing.Size(59, 38);
             this.btnExitRestart.TabIndex = 10;
@@ -252,7 +260,7 @@
             // 
             // btnYesRestart
             // 
-            this.btnYesRestart.Location = new System.Drawing.Point(77, 67);
+            this.btnYesRestart.Location = new System.Drawing.Point(77, 103);
             this.btnYesRestart.Name = "btnYesRestart";
             this.btnYesRestart.Size = new System.Drawing.Size(65, 38);
             this.btnYesRestart.TabIndex = 9;
@@ -263,7 +271,7 @@
             // restartLbl
             // 
             this.restartLbl.AutoSize = true;
-            this.restartLbl.Location = new System.Drawing.Point(74, 37);
+            this.restartLbl.Location = new System.Drawing.Point(74, 73);
             this.restartLbl.Name = "restartLbl";
             this.restartLbl.Size = new System.Drawing.Size(136, 13);
             this.restartLbl.TabIndex = 8;
