@@ -21,9 +21,10 @@ namespace TicTactToe
         {
             InitializeComponent();
             DisableGame();
+            pnlRestart.Visible = false;
         }
 
-        private void WinCheck(string player)
+        private void WinCheck(string player, bool check)
         {
             string winner = "";
 
@@ -67,9 +68,13 @@ namespace TicTactToe
 
             if (winner != "")
             {
-                Restart restart = new Restart();
-                restart.WinnerText = winner;
-                restart.Show();
+                lblWL.Text = $"The winner is {winner}!";
+                pnlRestart.Show();
+            }
+            else if (check == true)
+            {
+                lblWL.Text = "Wow, both you and my lame code lost!";
+                pnlRestart.Show();
             }
         }
 
@@ -87,7 +92,7 @@ namespace TicTactToe
             {
                 if(count == 5)
                 {
-                    WinCheck(player);
+                    WinCheck(player, true);
                     return;
                 }
 
@@ -209,7 +214,7 @@ namespace TicTactToe
             btnGrid1.Text = player;
             btnGrid1.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid2_Click(object sender, EventArgs e)
@@ -217,7 +222,7 @@ namespace TicTactToe
             btnGrid2.Text = player;
             btnGrid2.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid3_Click(object sender, EventArgs e)
@@ -225,7 +230,7 @@ namespace TicTactToe
             btnGrid3.Text = player;
             btnGrid3.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid4_Click(object sender, EventArgs e)
@@ -233,7 +238,7 @@ namespace TicTactToe
             btnGrid4.Text = player;
             btnGrid4.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid5_Click(object sender, EventArgs e)
@@ -241,7 +246,7 @@ namespace TicTactToe
             btnGrid5.Text = player;
             btnGrid5.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid6_Click(object sender, EventArgs e)
@@ -249,7 +254,7 @@ namespace TicTactToe
             btnGrid6.Text = player;
             btnGrid6.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid7_Click(object sender, EventArgs e)
@@ -257,7 +262,7 @@ namespace TicTactToe
             btnGrid7.Text = player;
             btnGrid7.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid8_Click(object sender, EventArgs e)
@@ -265,7 +270,7 @@ namespace TicTactToe
             btnGrid8.Text = player;
             btnGrid8.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnGrid9_Click(object sender, EventArgs e)
@@ -273,7 +278,7 @@ namespace TicTactToe
             btnGrid9.Text = player;
             btnGrid9.Image = ImgAdd(player);
             aiPlay(player);
-            WinCheck(player);
+            WinCheck(player, false);
         }
 
         private void btnXChoice_Click(object sender, EventArgs e)
@@ -312,6 +317,36 @@ namespace TicTactToe
             this.btnGrid7.Enabled = true;
             this.btnGrid8.Enabled = true;
             this.btnGrid9.Enabled = true;
+        }
+
+        private void btnYesRestart_Click(object sender, EventArgs e)
+        {
+            DisableGame();
+            pnlRestart.Visible = false;
+            count = 0;
+            btnGrid1.Text = "";
+            btnGrid1.Image = null;
+            btnGrid2.Text = "";
+            btnGrid2.Image = null;
+            btnGrid3.Text = "";
+            btnGrid3.Image = null;
+            btnGrid4.Text = "";
+            btnGrid4.Image = null;
+            btnGrid5.Text = "";
+            btnGrid5.Image = null;
+            btnGrid6.Text = "";
+            btnGrid6.Image = null;
+            btnGrid7.Text = "";
+            btnGrid7.Image = null;
+            btnGrid8.Text = "";
+            btnGrid8.Image = null;
+            btnGrid9.Text = "";
+            btnGrid9.Image = null;
+        }
+
+        private void btnExitRestart_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

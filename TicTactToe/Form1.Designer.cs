@@ -41,13 +41,20 @@
             this.btnXChoice = new System.Windows.Forms.Button();
             this.cstmDialogboxLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlRestart = new System.Windows.Forms.Panel();
+            this.lblWL = new System.Windows.Forms.Label();
+            this.btnExitRestart = new System.Windows.Forms.Button();
+            this.btnYesRestart = new System.Windows.Forms.Button();
+            this.restartLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlRestart.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGrid1
             // 
+            this.btnGrid1.BackColor = System.Drawing.Color.White;
             this.btnGrid1.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid1.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid1.Location = new System.Drawing.Point(0, 97);
             this.btnGrid1.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid1.MinimumSize = new System.Drawing.Size(50, 50);
@@ -55,13 +62,14 @@
             this.btnGrid1.Size = new System.Drawing.Size(100, 100);
             this.btnGrid1.TabIndex = 0;
             this.btnGrid1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid1.UseVisualStyleBackColor = true;
+            this.btnGrid1.UseVisualStyleBackColor = false;
             this.btnGrid1.Click += new System.EventHandler(this.btnGrid1_Click);
             // 
             // btnGrid2
             // 
+            this.btnGrid2.BackColor = System.Drawing.Color.White;
             this.btnGrid2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid2.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid2.Location = new System.Drawing.Point(107, 96);
             this.btnGrid2.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid2.MinimumSize = new System.Drawing.Size(50, 50);
@@ -69,13 +77,14 @@
             this.btnGrid2.Size = new System.Drawing.Size(87, 100);
             this.btnGrid2.TabIndex = 1;
             this.btnGrid2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid2.UseVisualStyleBackColor = true;
+            this.btnGrid2.UseVisualStyleBackColor = false;
             this.btnGrid2.Click += new System.EventHandler(this.btnGrid2_Click);
             // 
             // btnGrid3
             // 
+            this.btnGrid3.BackColor = System.Drawing.Color.White;
             this.btnGrid3.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrid3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGrid3.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGrid3.Location = new System.Drawing.Point(200, 96);
             this.btnGrid3.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid3.MinimumSize = new System.Drawing.Size(50, 50);
@@ -83,7 +92,7 @@
             this.btnGrid3.Size = new System.Drawing.Size(100, 100);
             this.btnGrid3.TabIndex = 2;
             this.btnGrid3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnGrid3.UseVisualStyleBackColor = true;
+            this.btnGrid3.UseVisualStyleBackColor = false;
             this.btnGrid3.Click += new System.EventHandler(this.btnGrid3_Click);
             // 
             // btnGrid6
@@ -210,12 +219,63 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlRestart
+            // 
+            this.pnlRestart.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlRestart.Controls.Add(this.lblWL);
+            this.pnlRestart.Controls.Add(this.btnExitRestart);
+            this.pnlRestart.Controls.Add(this.btnYesRestart);
+            this.pnlRestart.Controls.Add(this.restartLbl);
+            this.pnlRestart.Location = new System.Drawing.Point(0, 187);
+            this.pnlRestart.Name = "pnlRestart";
+            this.pnlRestart.Size = new System.Drawing.Size(300, 118);
+            this.pnlRestart.TabIndex = 13;
+            // 
+            // lblWL
+            // 
+            this.lblWL.AutoSize = true;
+            this.lblWL.Location = new System.Drawing.Point(74, 13);
+            this.lblWL.Name = "lblWL";
+            this.lblWL.Size = new System.Drawing.Size(58, 13);
+            this.lblWL.TabIndex = 11;
+            this.lblWL.Text = "Temp Text";
+            // 
+            // btnExitRestart
+            // 
+            this.btnExitRestart.Location = new System.Drawing.Point(151, 67);
+            this.btnExitRestart.Name = "btnExitRestart";
+            this.btnExitRestart.Size = new System.Drawing.Size(59, 38);
+            this.btnExitRestart.TabIndex = 10;
+            this.btnExitRestart.Text = "Quit";
+            this.btnExitRestart.UseVisualStyleBackColor = true;
+            this.btnExitRestart.Click += new System.EventHandler(this.btnExitRestart_Click);
+            // 
+            // btnYesRestart
+            // 
+            this.btnYesRestart.Location = new System.Drawing.Point(77, 67);
+            this.btnYesRestart.Name = "btnYesRestart";
+            this.btnYesRestart.Size = new System.Drawing.Size(65, 38);
+            this.btnYesRestart.TabIndex = 9;
+            this.btnYesRestart.Text = "Yes";
+            this.btnYesRestart.UseVisualStyleBackColor = true;
+            this.btnYesRestart.Click += new System.EventHandler(this.btnYesRestart_Click);
+            // 
+            // restartLbl
+            // 
+            this.restartLbl.AutoSize = true;
+            this.restartLbl.Location = new System.Drawing.Point(74, 37);
+            this.restartLbl.Name = "restartLbl";
+            this.restartLbl.Size = new System.Drawing.Size(136, 13);
+            this.restartLbl.TabIndex = 8;
+            this.restartLbl.Text = "Do you want to play again?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(300, 396);
+            this.Controls.Add(this.pnlRestart);
             this.Controls.Add(this.btnGrid9);
             this.Controls.Add(this.btnGrid8);
             this.Controls.Add(this.btnGrid7);
@@ -234,6 +294,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlRestart.ResumeLayout(false);
+            this.pnlRestart.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,6 +316,11 @@
         private System.Windows.Forms.Button btnXChoice;
         private System.Windows.Forms.Label cstmDialogboxLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlRestart;
+        private System.Windows.Forms.Label lblWL;
+        private System.Windows.Forms.Button btnExitRestart;
+        private System.Windows.Forms.Button btnYesRestart;
+        private System.Windows.Forms.Label restartLbl;
     }
 }
 
