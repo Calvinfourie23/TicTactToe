@@ -37,12 +37,14 @@
             this.btnGrid9 = new System.Windows.Forms.Button();
             this.btnGrid8 = new System.Windows.Forms.Button();
             this.btnGrid7 = new System.Windows.Forms.Button();
-            this.lblTemp = new System.Windows.Forms.Label();
+            this.btnOChoice = new System.Windows.Forms.Button();
+            this.btnXChoice = new System.Windows.Forms.Button();
+            this.cstmDialogboxLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGrid1
             // 
-            this.btnGrid1.Location = new System.Drawing.Point(0, 0);
+            this.btnGrid1.Location = new System.Drawing.Point(0, 105);
             this.btnGrid1.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid1.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid1.Name = "btnGrid1";
@@ -53,7 +55,7 @@
             // 
             // btnGrid2
             // 
-            this.btnGrid2.Location = new System.Drawing.Point(100, 0);
+            this.btnGrid2.Location = new System.Drawing.Point(100, 105);
             this.btnGrid2.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid2.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid2.Name = "btnGrid2";
@@ -64,7 +66,7 @@
             // 
             // btnGrid3
             // 
-            this.btnGrid3.Location = new System.Drawing.Point(200, 0);
+            this.btnGrid3.Location = new System.Drawing.Point(200, 105);
             this.btnGrid3.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid3.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid3.Name = "btnGrid3";
@@ -75,7 +77,7 @@
             // 
             // btnGrid6
             // 
-            this.btnGrid6.Location = new System.Drawing.Point(200, 100);
+            this.btnGrid6.Location = new System.Drawing.Point(200, 205);
             this.btnGrid6.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid6.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid6.Name = "btnGrid6";
@@ -86,7 +88,7 @@
             // 
             // btnGrid5
             // 
-            this.btnGrid5.Location = new System.Drawing.Point(100, 100);
+            this.btnGrid5.Location = new System.Drawing.Point(100, 205);
             this.btnGrid5.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid5.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid5.Name = "btnGrid5";
@@ -97,7 +99,7 @@
             // 
             // btnGrid4
             // 
-            this.btnGrid4.Location = new System.Drawing.Point(0, 100);
+            this.btnGrid4.Location = new System.Drawing.Point(0, 205);
             this.btnGrid4.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid4.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid4.Name = "btnGrid4";
@@ -108,7 +110,7 @@
             // 
             // btnGrid9
             // 
-            this.btnGrid9.Location = new System.Drawing.Point(200, 200);
+            this.btnGrid9.Location = new System.Drawing.Point(200, 305);
             this.btnGrid9.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid9.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid9.Name = "btnGrid9";
@@ -119,7 +121,7 @@
             // 
             // btnGrid8
             // 
-            this.btnGrid8.Location = new System.Drawing.Point(100, 200);
+            this.btnGrid8.Location = new System.Drawing.Point(100, 305);
             this.btnGrid8.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid8.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid8.Name = "btnGrid8";
@@ -130,7 +132,7 @@
             // 
             // btnGrid7
             // 
-            this.btnGrid7.Location = new System.Drawing.Point(0, 200);
+            this.btnGrid7.Location = new System.Drawing.Point(0, 305);
             this.btnGrid7.MaximumSize = new System.Drawing.Size(100, 100);
             this.btnGrid7.MinimumSize = new System.Drawing.Size(100, 100);
             this.btnGrid7.Name = "btnGrid7";
@@ -139,22 +141,44 @@
             this.btnGrid7.UseVisualStyleBackColor = true;
             this.btnGrid7.Click += new System.EventHandler(this.btnGrid7_Click);
             // 
-            // lblTemp
+            // btnOChoice
             // 
-            this.lblTemp.AutoSize = true;
-            this.lblTemp.Location = new System.Drawing.Point(378, 100);
-            this.lblTemp.Name = "lblTemp";
-            this.lblTemp.Size = new System.Drawing.Size(58, 13);
-            this.lblTemp.TabIndex = 9;
-            this.lblTemp.Text = "Temp Text";
+            this.btnOChoice.Location = new System.Drawing.Point(161, 43);
+            this.btnOChoice.Name = "btnOChoice";
+            this.btnOChoice.Size = new System.Drawing.Size(59, 38);
+            this.btnOChoice.TabIndex = 11;
+            this.btnOChoice.Text = "O";
+            this.btnOChoice.UseVisualStyleBackColor = true;
+            this.btnOChoice.Click += new System.EventHandler(this.btnOChoice_Click);
+            // 
+            // btnXChoice
+            // 
+            this.btnXChoice.Location = new System.Drawing.Point(77, 43);
+            this.btnXChoice.Name = "btnXChoice";
+            this.btnXChoice.Size = new System.Drawing.Size(65, 38);
+            this.btnXChoice.TabIndex = 10;
+            this.btnXChoice.Text = "X";
+            this.btnXChoice.UseVisualStyleBackColor = true;
+            this.btnXChoice.Click += new System.EventHandler(this.btnXChoice_Click);
+            // 
+            // cstmDialogboxLbl
+            // 
+            this.cstmDialogboxLbl.AutoSize = true;
+            this.cstmDialogboxLbl.Location = new System.Drawing.Point(84, 20);
+            this.cstmDialogboxLbl.Name = "cstmDialogboxLbl";
+            this.cstmDialogboxLbl.Size = new System.Drawing.Size(127, 13);
+            this.cstmDialogboxLbl.TabIndex = 9;
+            this.cstmDialogboxLbl.Text = "What do you want to be?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(584, 299);
-            this.Controls.Add(this.lblTemp);
+            this.ClientSize = new System.Drawing.Size(299, 406);
+            this.Controls.Add(this.btnOChoice);
+            this.Controls.Add(this.btnXChoice);
+            this.Controls.Add(this.cstmDialogboxLbl);
             this.Controls.Add(this.btnGrid9);
             this.Controls.Add(this.btnGrid8);
             this.Controls.Add(this.btnGrid7);
@@ -164,8 +188,8 @@
             this.Controls.Add(this.btnGrid3);
             this.Controls.Add(this.btnGrid2);
             this.Controls.Add(this.btnGrid1);
-            this.MaximumSize = new System.Drawing.Size(600, 338);
-            this.MinimumSize = new System.Drawing.Size(600, 338);
+            this.MaximumSize = new System.Drawing.Size(315, 445);
+            this.MinimumSize = new System.Drawing.Size(315, 445);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -184,7 +208,9 @@
         private System.Windows.Forms.Button btnGrid9;
         private System.Windows.Forms.Button btnGrid8;
         private System.Windows.Forms.Button btnGrid7;
-        private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.Button btnOChoice;
+        private System.Windows.Forms.Button btnXChoice;
+        private System.Windows.Forms.Label cstmDialogboxLbl;
     }
 }
 

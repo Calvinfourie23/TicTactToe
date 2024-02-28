@@ -19,18 +19,6 @@ namespace TicTactToe
         public Form1()
         {
             InitializeComponent();
-
-            CustomDialogBox customDialogBox = new CustomDialogBox();
-            DialogResult dialogResult = customDialogBox.ShowDialog();
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                player = "X";
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                player = "O";
-            }
         }
 
         private void EndState(string player)
@@ -231,6 +219,42 @@ namespace TicTactToe
         {
             btnGrid9.Text = player;
             aiPlay(player);
+        }
+
+        private void btnXChoice_Click(object sender, EventArgs e)
+        {
+            player = "X";
+        }
+
+        private void btnOChoice_Click(object sender, EventArgs e)
+        {
+            player = "O";
+        }
+
+        public void DisableGame()
+        {
+            this.btnGrid1.Enabled = false;
+            this.btnGrid2.Enabled = false;
+            this.btnGrid3.Enabled = false;
+            this.btnGrid4.Enabled = false;
+            this.btnGrid5.Enabled = false;
+            this.btnGrid6.Enabled = false;
+            this.btnGrid7.Enabled = false;
+            this.btnGrid8.Enabled = false;
+            this.btnGrid9.Enabled = false;
+        }
+
+        public void EnableGame()
+        {
+            this.btnGrid1.Enabled = true;
+            this.btnGrid2.Enabled = true;
+            this.btnGrid3.Enabled = true;
+            this.btnGrid4.Enabled = true;
+            this.btnGrid5.Enabled = true;
+            this.btnGrid6.Enabled = true;
+            this.btnGrid7.Enabled = true;
+            this.btnGrid8.Enabled = true;
+            this.btnGrid9.Enabled = true;
         }
     }
 }
