@@ -100,6 +100,7 @@ namespace TicTactToe
                         if (this.btnGrid1.Text == "")
                         {
                             this.btnGrid1.Text = ai;
+                            this.btnGrid1.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -108,6 +109,7 @@ namespace TicTactToe
                         if (this.btnGrid2.Text == "")
                         {
                             this.btnGrid2.Text = ai;
+                            this.btnGrid2.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -116,6 +118,7 @@ namespace TicTactToe
                         if (this.btnGrid3.Text == "")
                         {
                             this.btnGrid3.Text = ai;
+                            this.btnGrid3.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -124,6 +127,7 @@ namespace TicTactToe
                         if (this.btnGrid4.Text == "")
                         {
                             this.btnGrid4.Text = ai;
+                            this.btnGrid4.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -132,6 +136,7 @@ namespace TicTactToe
                         if (this.btnGrid5.Text == "")
                         {
                             this.btnGrid5.Text = ai;
+                            this.btnGrid5.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -140,6 +145,7 @@ namespace TicTactToe
                         if (this.btnGrid6.Text == "")
                         {
                             this.btnGrid6.Text = ai;
+                            this.btnGrid6.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -148,6 +154,7 @@ namespace TicTactToe
                         if (this.btnGrid7.Text == "")
                         {
                             this.btnGrid7.Text = ai;
+                            this.btnGrid7.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -156,6 +163,7 @@ namespace TicTactToe
                         if (this.btnGrid8.Text == "")
                         {
                             this.btnGrid8.Text = ai;
+                            this.btnGrid8.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -164,6 +172,7 @@ namespace TicTactToe
                         if (this.btnGrid9.Text == "")
                         {
                             this.btnGrid9.Text = ai;
+                            this.btnGrid9.Image = ImgAdd(ai);
                             return;
                         }
                         break;
@@ -171,9 +180,27 @@ namespace TicTactToe
             }
         }
 
+        public Bitmap ImgAdd(string image)
+        {
+            Bitmap b = new Bitmap(@"C:\Users\Calvin\source\repos\TicTactToe\Images\"+image+"Player.png");
+
+            int width = 80;
+            int height = 80;
+
+            Bitmap n = new Bitmap(width, height);
+
+            using (Graphics g = Graphics.FromImage(n))
+            {
+                g.DrawImage(b, 0, 0, width, height);
+            }
+
+            return n;
+        }
+
         private void btnGrid1_Click(object sender, EventArgs e)
         {
             btnGrid1.Text = player;
+            btnGrid1.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -181,6 +208,7 @@ namespace TicTactToe
         private void btnGrid2_Click(object sender, EventArgs e)
         {
             btnGrid2.Text = player;
+            btnGrid2.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -188,6 +216,7 @@ namespace TicTactToe
         private void btnGrid3_Click(object sender, EventArgs e)
         {
             btnGrid3.Text = player;
+            btnGrid3.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -195,6 +224,7 @@ namespace TicTactToe
         private void btnGrid4_Click(object sender, EventArgs e)
         {
             btnGrid4.Text = player;
+            btnGrid4.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -202,6 +232,7 @@ namespace TicTactToe
         private void btnGrid5_Click(object sender, EventArgs e)
         {
             btnGrid5.Text = player;
+            btnGrid5.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -209,6 +240,7 @@ namespace TicTactToe
         private void btnGrid6_Click(object sender, EventArgs e)
         {
             btnGrid6.Text = player;
+            btnGrid6.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -216,6 +248,7 @@ namespace TicTactToe
         private void btnGrid7_Click(object sender, EventArgs e)
         {
             btnGrid7.Text = player;
+            btnGrid7.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -223,6 +256,7 @@ namespace TicTactToe
         private void btnGrid8_Click(object sender, EventArgs e)
         {
             btnGrid8.Text = player;
+            btnGrid8.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
@@ -230,6 +264,7 @@ namespace TicTactToe
         private void btnGrid9_Click(object sender, EventArgs e)
         {
             btnGrid9.Text = player;
+            btnGrid9.Image = ImgAdd(player);
             aiPlay(player);
             WinCheck(player);
         }
