@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -182,7 +183,13 @@ namespace TicTactToe
 
         public Bitmap ImgAdd(string image)
         {
-            Bitmap b = new Bitmap(@"C:\Users\Calvin\source\repos\TicTactToe\Images\"+image+"Player.png");
+            string relativePath = @"Images\"+image+"Player.png";
+
+            string directory = AppDomain.CurrentDomain.BaseDirectory;
+
+            string imgPath = Path.Combine(directory, relativePath);
+
+            Bitmap b = new Bitmap(Image.FromFile(imgPath));
 
             int width = 80;
             int height = 80;
