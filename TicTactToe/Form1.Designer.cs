@@ -175,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(299, 406);
+            this.ClientSize = new System.Drawing.Size(300, 405);
             this.Controls.Add(this.btnOChoice);
             this.Controls.Add(this.btnXChoice);
             this.Controls.Add(this.cstmDialogboxLbl);
@@ -188,8 +188,8 @@
             this.Controls.Add(this.btnGrid3);
             this.Controls.Add(this.btnGrid2);
             this.Controls.Add(this.btnGrid1);
-            this.MaximumSize = new System.Drawing.Size(315, 445);
-            this.MinimumSize = new System.Drawing.Size(315, 445);
+            this.MaximumSize = new System.Drawing.Size(316, 444);
+            this.MinimumSize = new System.Drawing.Size(316, 444);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
